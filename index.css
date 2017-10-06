@@ -1,0 +1,99 @@
+html {
+    background-color: currentcolor;
+    color: #000;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+svg {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: helvetica;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+img {
+    display: none;
+    width: 50%;
+}
+
+.arc text {
+    fill: currentcolor;
+}
+
+text {
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+    font-size: small;
+    text-anchor: middle;
+}
+
+path {
+    stroke: currentcolor;
+    stroke-width: .5;
+}
+
+.arc {
+    opacity: 1;
+    stroke: white;
+}
+
+#tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4) pointer-events: none;
+}
+
+#tooltip.hidden {
+    opacity: 0;
+}
+
+#tooltip p {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    svg,
+    h1 {
+        display: none;
+    }
+    html {
+        background-color: white;
+    }
+    h2 {
+        color: black;
+        font-family: helvetica;
+        font-size: 1em;
+        margin: 1em 0 0;
+        text-align: center;
+    }
+    img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        margin: auto;
+        min-width: 9em;
+        position: relative;
+        top: 10em;
+    }
+}
